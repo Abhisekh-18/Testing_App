@@ -75,5 +75,10 @@ EditText name;
         it3.putExtra("student_name",n);
         startActivity(it3);
     }
+
+    public void view(View view) {
+        Intent it4=new Intent(this,WebViewActivity.class);
+        startActivity(it4);
+    }
 }
 
