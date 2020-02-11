@@ -18,9 +18,9 @@ RadioButton r1,r2,r3;
         c1=findViewById(R.id.checkBox2);
         c2=findViewById(R.id.checkBox3);
         c3=findViewById(R.id.checkBox4);
-        r1=findViewById(R.id.radioButton);
-        r2=findViewById(R.id.radioButton2);
-        r3=findViewById(R.id.radioButton3);
+        r1=findViewById(R.id.r1);
+        r2=findViewById(R.id.r2);
+        r3=findViewById(R.id.r3);
     }
 
     public void show_checked(View view) {
@@ -47,6 +47,20 @@ RadioButton r1,r2,r3;
     }
 
     public void rating(View view) {
-
+       StringBuilder msg1=new StringBuilder();
+        if(r1.isChecked())
+        {
+            msg1.append("\n The food quality is : Bad ");
+        }
+        if(r2.isChecked())
+        {
+            msg1.append("\n The food quality is : Average ");
+        }
+        if(r3.isChecked())
+        {
+            msg1.append("\n The food quality is : Good ");
+        }
+        Toast.makeText(this,msg1,Toast.LENGTH_LONG).show();
     }
-}
+    }
+

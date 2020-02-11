@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".checkbox">
 
     <CheckBox
@@ -58,59 +59,54 @@
         app:layout_constraintTop_toBottomOf="@+id/checkBox4"
         app:layout_constraintVertical_bias="0.057" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="79dp"
-        android:layout_height="36dp"
-        android:text="Bad"
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="222dp"
+        android:layout_height="85dp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Avrage"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton3"
-        app:layout_constraintStart_toEndOf="@+id/radioButton"
         app:layout_constraintTop_toBottomOf="@+id/button17"
-        app:layout_constraintVertical_bias="0.643" />
+        app:layout_constraintVertical_bias="0.122">
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="285dp"
-        android:layout_marginLeft="285dp"
-        android:layout_marginTop="555dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="144dp"
-        android:text="Good"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1"
+            android:text="Bad">
+
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/r2"
+            android:text="Average">
+
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/r3"
+            android:text="Good">
+
+        </RadioButton>
+    </RadioGroup>
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/button19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="162dp"
-        android:layout_marginLeft="162dp"
-        android:layout_marginTop="614dp"
-        android:layout_marginEnd="161dp"
-        android:layout_marginRight="161dp"
-        android:layout_marginBottom="69dp"
-        android:text="Give Rating"
+        android:text="Give Feedback"
         android:onClick="rating"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/rg"
+        app:layout_constraintStart_toStartOf="@+id/rg"
+        app:layout_constraintTop_toBottomOf="@+id/rg"
+        app:layout_constraintVertical_bias="0.08" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
