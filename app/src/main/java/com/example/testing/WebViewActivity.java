@@ -16,6 +16,20 @@ WebView w;
     }
 
     public void show_web(View view) {
-        w.loadUrl("https://www.amazon.com/");
+       // w.loadUrl("https://www.amazon.com/");
+        //w.loadUrl("file:///android_asset/Google.htm");
+        String page="<html>   <body bgcolor=\"#F0F0F0\" align=\"center\">\n" +
+                "\n" +
+                "<p>This is a paragraph for display purpose</p>\n" +
+                "<br>\n" +
+                "An Example of copyright symbols &#169;\n" +
+                "<br>\n" +
+                "An Example of resticted trade mark &#174;\n" +
+                "<br>\n" +
+                "An Example of tarade mark symbol &#8482;\n" +
+                "<br>\n" +
+                "<p>This is closing a paragraph for display purpose</p>\n" +
+                "<br></body></html>";
+        w.loadData(page,"text/html","UTF-8");
     }
 }

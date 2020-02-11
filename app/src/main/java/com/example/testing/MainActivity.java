@@ -80,5 +80,10 @@ EditText name;
         Intent it4=new Intent(this,WebViewActivity.class);
         startActivity(it4);
     }
+
+    public void checkBox(View view) {
+        Intent it5=new Intent(this,checkbox.class);
+        startActivity(it5);
+    }
 }
 
