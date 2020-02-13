@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".checkbox"></activity>
+        <activity android:name=".sharedPreferences"></activity>
+        <activity android:name=".checkbox" />
         <activity android:name=".WebViewActivity" />
         <activity android:name=".labActivity" />
         <activity android:name=".recive_activity" />

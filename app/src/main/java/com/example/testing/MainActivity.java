@@ -85,5 +85,10 @@ EditText name;
         Intent it5=new Intent(this,checkbox.class);
         startActivity(it5);
     }
+
+    public void share(View view) {
+        Intent it6=new Intent(this,sharedPreferences.class);
+        startActivity(it6);
+    }
 }
 
