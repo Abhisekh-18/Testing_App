@@ -90,5 +90,15 @@ EditText name;
         Intent it6=new Intent(this,sharedPreferences.class);
         startActivity(it6);
     }
+
+    public void travel_planner(View view) {
+        Intent it7=new Intent(this,travel_planner.class);
+        startActivity(it7);
+    }
+
+    public void quiz(View view) {
+        Intent it8=new Intent(this,quiz.class);
+        startActivity(it8);
+    }
 }
 

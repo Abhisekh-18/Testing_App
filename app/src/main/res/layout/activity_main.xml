@@ -26,8 +26,8 @@
         android:layout_weight="1"
         android:background="@drawable/android"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="65dp" />
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="67dp" />
 
     <Button
         android:id="@+id/button2"
@@ -151,6 +151,32 @@
         app:layout_constraintStart_toStartOf="@+id/button14"
         app:layout_constraintTop_toBottomOf="@+id/button14"
         app:layout_constraintVertical_bias="0.119" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="travel_planner"
+        android:text="Travel planner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button16"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="labevaluation2"
+        android:onClick="quiz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="@+id/button18"
+        app:layout_constraintTop_toBottomOf="@+id/button18"
+        app:layout_constraintVertical_bias="0.151" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
