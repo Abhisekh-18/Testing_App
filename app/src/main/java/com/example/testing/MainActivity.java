@@ -100,5 +100,10 @@ EditText name;
         Intent it8=new Intent(this,quiz.class);
         startActivity(it8);
     }
+
+    public void listview(View view) {
+        Intent it9=new Intent(this,listview.class);
+        startActivity(it9);
+    }
 }
 
