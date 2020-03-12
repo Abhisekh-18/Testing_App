@@ -16,8 +16,6 @@ WebView w;
     }
 
     public void show_web(View view) {
-       // w.loadUrl("https://www.amazon.com/");
-        //w.loadUrl("file:///android_asset/Google.htm");
         String page="<html>   <body bgcolor=\"#F0F0F0\" align=\"center\">\n" +
                 "\n" +
                 "<p>This is a paragraph for display purpose</p>\n" +

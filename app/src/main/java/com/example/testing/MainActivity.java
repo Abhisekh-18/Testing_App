@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -104,6 +103,12 @@ EditText name;
     public void listview(View view) {
         Intent it9=new Intent(this,listview.class);
         startActivity(it9);
+    }
+
+
+    public void list2(View view) {
+        Intent it10=new Intent(this,list2.class);
+        startActivity(it10);
     }
 }
 
